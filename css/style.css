@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	font-family: 'Roboto Slab', serif;
-	color: #777;
+	color: #777777;
 }
 
 h1, #main-menu {
@@ -14,7 +14,7 @@ h1, #main-menu {
 
 h1, h2, h3 {
 	font-family: 'Montserrat', sans-serif;
-	color: #333;
+	color: #333333;
 }
 
 #main-nav {
@@ -24,14 +24,27 @@ h1, h2, h3 {
 
 #main-menu a {
 	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
 }
 
 #main-nav a:hover {
 	color: #0ed8d6;
+	
 }
 
 #main-nav.scroll {
 	background-color: #0ed8d6;
+	opacity: 0.8;
+}
+
+#main-nav.scroll a:hover {
+	color: #777777;
+}
+
+#main-menu ul a {
+	margin-right: 0;
+	padding: 20px;
 }
 
 #main-header {
@@ -78,4 +91,154 @@ h1, h2, h3 {
 	background-color: #fff;
 	border: 1px solid #0ed8d6;
 	color: #0ed8d6;
+}
+
+#services {
+	height: 445px;
+    padding: 30px;
+    margin-top: 5px;
+}
+
+#services .container {
+	padding: 10px;
+}
+
+#services header p {
+	font-family: 'Droid Serif', sans-serif;
+}
+
+#services h2 {
+	font-size: 1.5em;
+}
+
+#services .fa {
+	font-size: 2.5em;
+	height: 70px;
+	width: 70px;
+	line-height: 70px;
+	border: 1px solid #0ed8d6;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #0ed8d6;
+	transition: all .3s;
+	
+}
+
+#services .fa:hover {
+	color: #0ed8d6;
+	background-color: #fff;
+	transform: rotate(360deg);
+}
+
+#portfolio {
+	background-color: #f7f7f7;
+}
+
+#portfolio-caption {
+	font-family: 'Droid Serif', sans-serif;
+}
+
+#portfolio-item-1 {
+	background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio-item-2 {
+	background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+#portfolio-item-3 {
+	background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio-item-4 {
+	background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio-item-5 {
+	background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio-item-6 {
+	background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#team {
+	height: 675px;
+}
+
+#team .img-circle {
+	height: 255px;
+}
+
+.social-icons a {
+	height: 35px;
+	width: 35px;
+	display: inline-block;
+	line-height: 35px;
+	background-color: #222;
+	border: 1px solid #222;
+	border-radius: 50%;
+	font-size: 1.5em;
+	color: #fff;
+	transition: all .3s;
+	margin: 5px;
+	text-align: center;
+}
+
+#team .social-icons a:hover {
+	background-color: #0ed8d6;
+	border: 1px solid #0ed8d6;
+}
+
+#team .row {
+	padding: 20px;
+}
+
+#team header p {
+	font-family: 'Droid Serif', sans-serif;
+}
+
+#team #text {
+	margin-top: 20px;
+}
+
+#contact {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/footer/world-map.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 540px;
+}
+
+#contact h1, p {
+	color: #fff;
+}
+
+#contact .contact-description {
+	font-family: 'Droid Serif', sans-serif;
+}
+
+#contact input, #contact textarea {
+	text-transform: uppercase;
+	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 5px;
+	margin-top: 40px;
+}
+
+#contact input:not([type='submit']) {
+	display: block;
+	width: 450px;
+	margin-left: 150px;
+	padding: 20px;
+}
+
+#contact input:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+#contact textarea {
+	width: 400px;
+	height: 275px;
+}
+
 
