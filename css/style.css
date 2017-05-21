@@ -100,7 +100,6 @@ h1, h2, h3 {
 /* Sekcja Services */
 
 #services {
-	height: 445px;
     padding: 30px;
     margin-top: 5px;
 }
@@ -227,7 +226,7 @@ h1, h2, h3 {
 /* Sekcja Zespol */
 
 #team {
-	height: 675px;
+	padding-bottom: 20px;
 }
 
 #team .img-circle {
@@ -272,7 +271,6 @@ h1, h2, h3 {
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/footer/world-map.jpg);
 	background-size: cover;
 	background-position: center;
-	height: 540px;
 }
 
 #contact-header .contact-caption, .contact-description {
@@ -294,11 +292,10 @@ h1, h2, h3 {
 #contact input:not([type='submit']) {
 	display: block;
 	width: 450px;
-	margin-left: 150px;
 	padding: 20px;
 }
 
-#contact input:not(:last-child) {
+#contact input {
 	margin-bottom: 10px;
 }
 
