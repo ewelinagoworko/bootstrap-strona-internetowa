@@ -17,6 +17,8 @@ h1, h2, h3 {
 	color: #333333;
 }
 
+/* Menu nawigacyjne */
+
 #main-nav {
 	background-color: transparent;
 	border: none;
@@ -46,6 +48,8 @@ h1, h2, h3 {
 	margin-right: 0;
 	padding: 20px;
 }
+
+/* Header */
 
 #main-header {
 	height: 100vh;
@@ -93,6 +97,8 @@ h1, h2, h3 {
 	color: #0ed8d6;
 }
 
+/* Sekcja Services */
+
 #services {
 	height: 445px;
     padding: 30px;
@@ -130,11 +136,67 @@ h1, h2, h3 {
 	transform: rotate(360deg);
 }
 
+/* Sekcja Portfolio */
+
 #portfolio {
 	background-color: #f7f7f7;
 }
 
-#portfolio-caption {
+#portfolio .outer {
+	background: #fff;
+	margin-right: 45px;
+	margin-left: 45px;
+	margin-bottom: 15px;	
+}
+
+#portfolio .inner {
+	height: 260px;
+	overflow: hidden;
+}
+
+#portfolio .outer .portfolio-image {
+	height: 100%;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	transition: .3s;
+}
+
+#portfolio .outer .portfolio-image:hover {
+	transform: scale(1.2);
+}
+
+#portfolio .outer .portfolio-image .mask {
+	background-color: rgba(14, 216, 214, 0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all .3s;
+}
+
+#portfolio .outer .portfolio-image .mask:hover{
+	opacity: 1;
+}
+
+#portfolio .outer .portfolio-image .mask .fa{
+	position: absolute;
+	color: #fff;
+	font-size: 3em;
+	margin: auto;
+    left: 0;
+    right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+
+#portfolio .outer p {
+	padding-bottom: 15px
+}
+
+
+.portfolio-description {
 	font-family: 'Droid Serif', sans-serif;
 }
 
@@ -162,6 +224,8 @@ h1, h2, h3 {
 	background-image: url(../img/portfolio/box_of_cookies.jpg);
 }
 
+/* Sekcja Zespol */
+
 #team {
 	height: 675px;
 }
@@ -175,8 +239,8 @@ h1, h2, h3 {
 	width: 35px;
 	display: inline-block;
 	line-height: 35px;
-	background-color: #222;
-	border: 1px solid #222;
+	background-color: #222222;
+	border: 1px solid #222222;
 	border-radius: 50%;
 	font-size: 1.5em;
 	color: #fff;
@@ -202,6 +266,8 @@ h1, h2, h3 {
 	margin-top: 20px;
 }
 
+/* Sekcja Kontakt */
+
 #contact {
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/footer/world-map.jpg);
 	background-size: cover;
@@ -209,7 +275,7 @@ h1, h2, h3 {
 	height: 540px;
 }
 
-#contact h1, p {
+#contact-header .contact-caption, .contact-description {
 	color: #fff;
 }
 
@@ -239,6 +305,33 @@ h1, h2, h3 {
 #contact textarea {
 	width: 400px;
 	height: 275px;
+}
+
+/* Sekcja Footer */
+
+#main-footer ul li {
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 10px;	
+}
+
+#main-footer ul li a {
+	text-decoration: none;
+	color: #222222;
+}
+
+#main-footer .social-icons a:hover {
+	background-color: #0ed8d6;
+	border: 1px solid #0ed8d6;
+}
+
+#main-footer ul li a:hover {
+	color: #0ed8d6;
+}
+
+#main-footer p {
+	color: #222222;
+	margin-top: 10px;
 }
 
 
